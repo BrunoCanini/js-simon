@@ -9,9 +9,12 @@ btnStart.addEventListener("click" , function(){
 
     let box;
 
+    let listaBox = []
+
     for (let i = 0; i < 5; i++) {
     
         let number = numberRandom()
+        listaBox.push(number)
         console.log(number)
 
         box = document.createElement("div");
