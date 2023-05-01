@@ -47,7 +47,7 @@ btnStart.addEventListener("click" , function(){
         if(secondToPrompt === 0){
             clearInterval(timer2)
             for (let i = 0; i < 5; i++) {
-                prom = prompt("inserisci i numeri ")
+                prom = parseInt(prompt("inserisci i numeri "));
                 listaUtente.push(prom)
             }
         } else{
@@ -55,6 +55,8 @@ btnStart.addEventListener("click" , function(){
             secondToPrompt--
         }
 
+        console.log(listaBox)
+        console.log(listaUtente)
         for (let i = 0; i < listaUtente.length; i++) {
             const element = listaUtente[i];
 
