@@ -40,6 +40,6 @@ main{
     margin: 10px;
 }
 
-.invisible{
+#container.invisible{
     display: none;
 }
