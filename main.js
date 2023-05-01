@@ -11,6 +11,8 @@ btnStart.addEventListener("click" , function(){
 
     let listaBox = []
 
+    let listaUtente = []
+
     for (let i = 0; i < 5; i++) {
     
         let number = numberRandom()
@@ -26,6 +28,7 @@ btnStart.addEventListener("click" , function(){
 
     let secondForInvisible = 3
     let secondToPrompt = 4
+    let prom;
 
     let timer = setInterval( function(){
         
@@ -43,13 +46,17 @@ btnStart.addEventListener("click" , function(){
         
         if(secondToPrompt === 0){
             clearInterval(timer2)
-            let prom = prompt("inserisci i numeri ")
+            for (let i = 0; i < 5; i++) {
+                prom = prompt("inserisci i numeri ")
+                listaUtente.push(prom)
+            }
         } else{
             console.log(secondToPrompt)
             secondToPrompt--
         }
 
-    }, 1 * 1000)
+        console.log(listaUtente)
 
+    }, 1 * 1000)
 
 })
