@@ -29,7 +29,7 @@ btnStart.addEventListener("click" , function(){
         
         if(secondi === 0){
             clearInterval(timer)
-
+            box.classList.add("invisible");
         } else{
             console.log(secondi)
             secondi--
