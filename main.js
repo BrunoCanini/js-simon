@@ -55,7 +55,16 @@ btnStart.addEventListener("click" , function(){
             secondToPrompt--
         }
 
-        console.log(listaUtente)
+        for (let i = 0; i < listaUtente.length; i++) {
+            const element = listaUtente[i];
+
+            if( listaBox.includes(element)){
+                console.log(`${element} è incluso`)
+            } else{
+                console.log(`${element} non è incluso`)
+            }
+            
+        }
 
     }, 1 * 1000)
 
